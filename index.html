@@ -11,14 +11,26 @@
 <body>
     <div class="box-principal">
         <div class="box-dma">
-            <h1>D I A</h1>   
-            <input class="input-data" type="datetime" value="DD">
-            <h1>M Ê S</h1>   
-            <input class="input-data" type="datetime" value="MM">
-            <h1>A N O</h1>   
-            <input class="input-data" type="datetime" value="AA">
-
-            <input class="botao-recarregar" type="button" value="">
+            <section>
+                <h1>D I A</h1>   
+                <input class="input-data" type="number" placeholder="DD" value="">
+                <p>Deve ser um dia valido</p>
+            </section>
+            <section>
+                <h1>M Ê S</h1>   
+                <input class="input-data" type="number" placeholder="MM" value="">
+                <p>Deve ser um mês valido</p>
+            </section>
+            <section>
+                <h1>A N O</h1>   
+                <input class="input-data" type="number" placeholder="AAAA" value="">
+                <p>Deve ser um ano que passou</p>
+            </section>
+        </div>
+        <div class="box-reload">
+            <div>
+                <img class="img" src="img/refresh.png">
+            </div>
         </div>
         <div class="box-amd">
             <p><span class="ano">--</span> anos</p>
