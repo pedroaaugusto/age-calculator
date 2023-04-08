@@ -34,45 +34,48 @@ btn.addEventListener("click", function(e) {
 
     e.preventDefault();
 
-    /* começo recebimento data do usuario */
+    /* começo recebimento data do usuario = ok */
 
-    const valorDia = diaNascimento.value;  
+    const valorDia = Number(diaNascimento.value);  
     console.log(valorDia) /* apagar no final */
 
-    const valorMes = mesNascimento.value;  
+    const valorMes = Number(mesNascimento.value);  
     console.log(valorMes) /* apagar no final */
 
-    const valorAno = anoNascimento.value;  
+    const valorAno = Number(anoNascimento.value);  
     console.log(valorAno) /* apagar no final */
 
     /* fim recebimento data do usuario */
 
-    /* começo quantos dias mes do usuario tem */
+    /* começo quantos dias mes do usuario tem = ok */
 
     if (valorMes == 1 || valorMes == 3 || valorMes == 5 || valorMes == 7 || valorMes == 8 || valorMes == 10 || valorMes == 12) {
 
-        console.log("O mês digitado tem 31 dias."); /* apagar no final */
         var mesNominal = 31
+        console.log("O mês digitado tem 31 dias."); /* apagar no final */
 
     } else if (valorMes == 4 || valorMes == 6 || valorMes == 9 || valorMes == 11) {
 
-        console.log("O mês digitado tem 30 dias."); /* apagar no final */
         var mesNominal = 30
+        console.log("O mês digitado tem 30 dias."); /* apagar no final */
 
     } else if (valorMes == 2) {
 
         var ano4 = valorAno % 4
+        console.log(ano4)
+        
         var ano400 = valorAno % 400
+        console.log(ano400)
 
         if (ano4 == 0 || ano400 == 0) {
 
-            console.log("O mês digitado tem 29 dias."); /* apagar no final */
             var mesNominal = 29
+            console.log("O mês digitado tem 29 dias."); /* apagar no final */
 
         } else {
 
-            console.log("O mês digitado tem 28 dias."); /* apagar no final */
             var mesNominal = 28
+            console.log("O mês digitado tem 28 dias."); /* apagar no final */
 
         }
     }
@@ -80,7 +83,7 @@ btn.addEventListener("click", function(e) {
     /* fim quantos dias mes do usuario tem */
 
 
-    /* começo data atual */
+    /* começo data atual = ok */
 
     const data = new Date()
 
@@ -89,20 +92,21 @@ btn.addEventListener("click", function(e) {
     const ano = data.getFullYear()
 
     const dataAtual = `${dia}/${mes}/${ano}`
-
     console.log(dataAtual) /* apagar no final */
+
+    const diaNumero = Number(dia)
+    const mesNumero = Number(mes)
+    const anoNumero = ano
 
     /* fim data atual */
 
     /* começo contas */
 
     const diasFaltantes = mesNominal - valorDia
-    console.log(diasFaltantes) /* apagar no final */
 
     const mesFaltantes = 12 - valorMes 
-    console.log(mesFaltantes) /* apagar no final */
 
-    /*começo soma de meses futuros ate fim no ano em dias*/
+    /*começo soma de meses futuros ate fim no ano em dias = ac  redito q ok*/
 
     if (ano4 == 0 || ano400 == 0) {
         if (valorMes == 1) {
@@ -183,21 +187,20 @@ btn.addEventListener("click", function(e) {
 
     }
 
-    /*fim soma de meses futuros ate fim no ano em dias*/
+    /*fim soma de meses futuros ate fim no ano em dias */
 
     const somaDiasFaltantesMesFaltantes = diasFaltantes + mesFaltantesEmDias
-    console.log(somaDiasFaltantesMesFaltantes) /* apagar no final */
 
-    /* começo soma de anos inteiros entre datas */
+    /* começo soma de anos inteiros entre datas = ok */
 
     var valorAnoMaisUm = valorAno + 1
     var somaDiasAnosInteiros = 0
 
-    let i = valorAnoMaisUm ;
-    while (i < ano) {
+    let j = valorAnoMaisUm ;
+    while (j < ano) {
 
-        var novoAno4 = i % 4
-        var novoAno400 = i % 400
+        var novoAno4 = j % 4
+        var novoAno400 = j % 400
 
         if (novoAno4 == 0 || novoAno400 == 0) {
 
@@ -209,92 +212,91 @@ btn.addEventListener("click", function(e) {
 
         }
 
-        console.log(i);
-        i++;
+        j++;
     }
 
-    console.log(somaDiasAnosInteiros)
+    console.log('soma dos dias e anos inteiros : ', somaDiasAnosInteiros)
 
     /* fim soma de anos inteiros entre datas */
 
-    /*começo soma de meses passados ate mes atual em dias*/
+    /*começo soma de meses passados ate mes atual em dias = acredito que ok*/
 
     var anoAtual4 = ano % 4
     var anoAtual400 = ano % 400
 
     if (anoAtual4 == 0 || anoAtual400 == 0) {
-        if (valorMes == 1) {
+        if (mesNumero == 1) {
             var mesPassadosEmDias = 0
             /* 0 */
-        } else if (valorMes == 2) {
+        } else if (mesNumero == 2) {
             var mesPassadosEmDias = 31
             /* 31 */
         } else if (valorMes == 3) {
             var mesPassadosEmDias = 60
             /* 31 + 29 */
-        } else if (valorMes == 4) {
+        } else if (mesNumero == 4) {
             var mesPassadosEmDias = 91
             /* 31 + 29 + 31 */
-        } else if (valorMes == 5) {
+        } else if (mesNumero == 5) {
             var mesPassadosEmDias = 121
             /* 31 + 29 + 31 + 30*/
-        } else if (valorMes == 6) {
+        } else if (mesNumero == 6) {
             var mesPassadosEmDias = 152
             /* 31 + 29 + 31 + 30 + 31*/
-        } else if (valorMes == 7) {
+        } else if (mesNumero == 7) {
             var mesPassadosEmDias = 182
             /* 31 + 29 + 31 + 30 + 31 + 30*/
-        } else if (valorMes == 8) {
+        } else if (mesNumero == 8) {
             var mesPassadosEmDias = 213
             /* 31 + 29 + 31 + 30 + 31 + 30 + 31*/
-        } else if (valorMes == 9) {
+        } else if (mesNumero == 9) {
             var mesPassadosEmDias = 244
             /* 31 + 29 + 31 + 30 + 31 + 30 + 31 + 31*/
-        } else if (valorMes == 10) {
+        } else if (mesNumero == 10) {
             var mesPassadosEmDias = 274
             /* 31 + 29 + 31 + 30 + 31 + 30 + 31 + 31 + 30*/
-        } else if (valorMes == 11) {
+        } else if (mesNumero == 11) {
             var mesPassadosEmDias = 305
             /* 31 + 29 + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31*/
-        } else if (valorMes == 12) {
+        } else if (mesNumero == 12) {
             var mesPassadosEmDias = 335
             /* 31 + 29 + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31 + 30*/
         }
     } else {
-        if (valorMes == 1) {
+        if (mesNumero == 1) {
             var mesPassadosEmDias = 0
             /* 0 */
-        } else if (valorMes == 2) {
+        } else if (mesNumero == 2) {
             var mesPassadosEmDias = 31
             /* 31 */
-        } else if (valorMes == 3) {
+        } else if (mesNumero == 3) {
             var mesPassadosEmDias = 59
             /* 31 + 28 */
-        } else if (valorMes == 4) {
+        } else if (mesNumero == 4) {
             var mesPassadosEmDias = 90
             /* 31 + 28 + 31 */
-        } else if (valorMes == 5) {
+        } else if (mesNumero == 5) {
             var mesPassadosEmDias = 120
             /* 31 + 28 + 31 + 30*/
-        } else if (valorMes == 6) {
+        } else if (mesNumero == 6) {
             var mesPassadosEmDias = 151
             /* 31 + 28 + 31 + 30 + 31*/
-        } else if (valorMes == 7) {
+        } else if (mesNumero == 7) {
             var mesPassadosEmDias = 181
             /* 31 + 28 + 31 + 30 + 31 + 30*/
-        } else if (valorMes == 8) {
+        } else if (mesNumero == 8) {
             var mesPassadosEmDias = 212
             /* 31 + 28 + 31 + 30 + 31 + 30 + 31*/
-        } else if (valorMes == 9) {
+        } else if (mesNumero == 9) {
             var mesPassadosEmDias = 243
             /* 31 + 28 + 31 + 30 + 31 + 30 + 31 + 31*/
-        } else if (valorMes == 10) {
+        } else if (mesNumero == 10) {
             var mesPassadosEmDias = 273
             /* 31 + 28 + 31 + 30 + 31 + 30 + 31 + 31 + 30*/
-        } else if (valorMes == 11) {
+        } else if (mesNumero == 11) {
             var mesPassadosEmDias = 304
             /* 31 + 28 + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31*/
-        } else if (valorMes == 12) {
+        } else if (mesNumero == 12) {
             var mesPassadosEmDias = 334
             /* 31 + 28 + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31 + 30*/
         }
@@ -303,12 +305,14 @@ btn.addEventListener("click", function(e) {
 
     /*fim soma de meses passados ate mes atual em dias*/
 
-    const somaDiasPassadosMesPassados = dia + mesPassadosEmDias
+    const somaDiasPassadosMesPassados = diaNumero + mesPassadosEmDias
     console.log(somaDiasPassadosMesPassados) /* apagar no final */
 
-    /* começo contas idade atual em dias */
+    /* começo contas idade atual em dias = ok */
 
     var idadeAtualEmDias = somaDiasFaltantesMesFaltantes + somaDiasAnosInteiros + somaDiasPassadosMesPassados
+
+    console.log(idadeAtualEmDias)
     
     /* fim contas idade atual em dias */
 
@@ -316,12 +320,17 @@ btn.addEventListener("click", function(e) {
 
     var valorAnoMaisUm = valorAno + 1
     var somaDiasAnosInteiros = 0
+    var meses31 = 0
+    var meses30 = 0
+    var meses29 = 0
+    var meses28 = 0
 
     let k = valorAnoMaisUm ;
     while (k < ano) {
 
         var newAno4 = k % 4
         var newAno400 = k % 400
+        console.log(k);
 
         if (newAno4 == 0 || newAno400 == 0) {
 
@@ -337,7 +346,7 @@ btn.addEventListener("click", function(e) {
 
         }
 
-        console.log(k);
+        
         k++;
     }
 
