@@ -97,13 +97,16 @@ section > p{
     width: 6rem;
     height: 6rem;
     border: none;
-    border-radius: 3rem;    
+    border-radius: 3rem; 
+     
+
 }
 
 img{
     position: relative;
     bottom: 6.22rem;
     max-width: 6rem;
+    pointer-events:none; 
 }
 
 img:hover{
@@ -149,9 +152,14 @@ p > span {
         display: grid;
         place-items: center;
     }
+
+    img{
+        bottom: 5.2rem;
+        max-width: 7rem;
+    }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1360px) {
 
     .box-principal{
         width: 45rem;
