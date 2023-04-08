@@ -92,8 +92,17 @@ section > p{
     border-radius: 3rem;
 }
 
+#send {
+    background-color: hsl(259, 100%, 65%);
+    width: 6rem;
+    height: 6rem;
+    border: none;
+    border-radius: 3rem;    
+}
+
 img{
     position: relative;
+    bottom: 6.22rem;
     max-width: 6rem;
 }
 
