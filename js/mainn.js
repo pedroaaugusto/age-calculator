@@ -60,14 +60,186 @@ btn.addEventListener("click", function(e) {
 
     /* começo soma meses inteiros primeiro ano  = ok */
 
-    var mesesPrimeiroAno = valorMes - 1
+    var pAno4 = valorAno % 4
+    console.log(pAno4)
+    
+    var pAno400 = valorAno % 400
+    console.log(pAno400)
+
+    if (pAno4 == 0 || pAno400 == 0) {
+
+        if (valorMes == 1 || valorMes == 3 || valorMes == 5 || valorMes == 7 || valorMes == 8 || valorMes == 10 || valorMes == 12)  {
+
+            if (valorDia == 31 ) {
+
+                var mesesPrimeiroAno = valorMes
+        
+            } else {
+        
+                var mesesPrimeiroAno = valorMes - 1
+        
+            }
+            
+        } else if (valorMes == 2) {
+
+            if (valorDia == 29 ) {
+
+                var mesesPrimeiroAno = valorMes
+        
+            } else {
+        
+                var mesesPrimeiroAno = valorMes - 1
+        
+            }
+            
+        } else if (valorMes == 4 || valorMes == 6 || valorMes == 9 || valorMes == 11) {
+
+            if (valorDia == 31 ) {
+
+                var mesesPrimeiroAno = valorMes
+        
+            } else {
+        
+                var mesesPrimeiroAno = valorMes - 1
+        
+            }
+           
+        } 
+
+    } else {
+
+        if (valorMes == 1 || valorMes == 3 || valorMes == 5 || valorMes == 7 || valorMes == 8 || valorMes == 10 || valorMes == 12)  {
+
+            if (valorDia == 31 ) {
+
+                var mesesPrimeiroAno = valorMes
+        
+            } else {
+        
+                var mesesPrimeiroAno = valorMes - 1
+        
+            }
+            
+        } else if (valorMes == 2) {
+
+            if (valorDia == 28 ) {
+
+                var mesesPrimeiroAno = valorMes
+        
+            } else {
+        
+                var mesesPrimeiroAno = valorMes - 1
+        
+            }
+            
+        } else if (valorMes == 4 || valorMes == 6 || valorMes == 9 || valorMes == 11) {
+
+            if (valorDia == 31 ) {
+
+                var mesesPrimeiroAno = valorMes
+        
+            } else {
+        
+                var mesesPrimeiroAno = valorMes - 1
+        
+            }
+           
+        } 
+
+    }
 
     /* fim soma meses inteiros primeiro ano */
 
 
     /* começo soma meses inteiros ultimo ano  = ok */
 
-    var mesesPrimeiroAno = mesNumero -1
+    var uAno4 = anoNumero % 4
+    console.log(uAno4)
+    
+    var uAno400 = anoNumero % 400
+    console.log(uAno400)
+
+    if (uAno4 == 0 || uAno400 == 0) {
+
+        if (mesNumero == 1 || mesNumero == 3 || mesNumero == 5 || mesNumero == 7 || mesNumero == 8 || mesNumero == 10 || mesNumero == 12) {
+
+            if (valorDia == 31 ) {
+
+                var mesesUltimoAno = mesNumero
+        
+            } else {
+        
+                var mesesUltimoAno = mesNumero -1
+        
+            }
+            
+        } else if (mesNumero == 2) {
+
+            if (valorDia == 29 ) {
+
+                var mesesUltimoAno = mesNumero
+        
+            } else {
+        
+                var mesesUltimoAno = mesNumero -1
+        
+            }
+            
+        } else if (mesNumero == 4 || mesNumero == 6 || mesNumero == 9 || mesNumero == 11) {
+
+            if (valorDia == 30 ) {
+
+                var mesesUltimoAno = mesNumero
+        
+            } else {
+        
+                var mesesUltimoAno = mesNumero -1
+        
+            }
+           
+        } 
+
+    } else {
+
+        if (mesNumero == 1 || mesNumero == 3 || mesNumero == 5 || mesNumero == 7 || mesNumero == 8 || mesNumero == 10 || mesNumero == 12) {
+
+            if (valorDia == 31 ) {
+
+                var mesesUltimoAno = mesNumero
+        
+            } else {
+        
+                var mesesUltimoAno = mesNumero -1
+        
+            }
+            
+        } else if (mesNumero == 2) {
+
+            if (valorDia == 28 ) {
+
+                var mesesUltimoAno = mesNumero
+        
+            } else {
+        
+                var mesesUltimoAno = mesNumero -1
+        
+            }
+            
+        } else if (mesNumero == 4 || mesNumero == 6 || mesNumero == 9 || mesNumero == 11) {
+
+            if (valorDia == 30 ) {
+
+                var mesesUltimoAno = mesNumero
+        
+            } else {
+        
+                var mesesUltimoAno = mesNumero -1
+        
+            }
+           
+        } 
+
+    }
 
     /* fim soma meses inteiros ultimo ano */
     
