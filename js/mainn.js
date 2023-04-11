@@ -279,6 +279,23 @@ btn.addEventListener("click", function(e) {
 
     var diasFinal = diasPrimeiroAno + diasUltimoAno
 
+    var mediaDiasAno = 365.25
+    var mediaDiasMes = (mediaDiasAno / 12).toFixed(2) /* 30.44 */
+
+    if (diasFinal >= mediaDiasMes) {
+
+        var diasFinal = Math.round(diasFinal - mediaDiasMes)
+        var mesesFinal = mesesFinal +1
+
+        if (mesesFinal > 12) {
+            
+            var mesesFinal = mesesFinal - 12
+            var somaAnosInteiros = somaAnosInteiros + 1
+            
+        }
+        
+    }
+
     /* fim soma dias primeiro e ultimo ano */
 
 
