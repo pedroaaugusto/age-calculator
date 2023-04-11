@@ -58,7 +58,7 @@ btn.addEventListener("click", function(e) {
     /* fim soma de anos inteiros entre datas */
 
 
-    /* começo soma meses inteiros primeiro ano  = ok */
+    /* começo soma meses inteiros primeiro ano e dias primeiro ano = ok */
 
     var pAno4 = valorAno % 4
     console.log(pAno4)
@@ -72,11 +72,13 @@ btn.addEventListener("click", function(e) {
 
             if (valorDia == 31 ) {
 
-                var mesesPrimeiroAno = valorMes
+                var mesesPrimeiroAno = 12 - valorMes
+                var diasPrimeiroAno = 1
         
             } else {
         
-                var mesesPrimeiroAno = valorMes - 1
+                var mesesPrimeiroAno = 12 - valorMes
+                var diasPrimeiroAno = 31 - (valorDia - 1)
         
             }
             
@@ -84,23 +86,27 @@ btn.addEventListener("click", function(e) {
 
             if (valorDia == 29 ) {
 
-                var mesesPrimeiroAno = valorMes
+                var mesesPrimeiroAno = 12 - valorMes
+                var diasPrimeiroAno = 1
         
             } else {
         
-                var mesesPrimeiroAno = valorMes - 1
-        
+                var mesesPrimeiroAno = 12 - valorMes
+                var diasPrimeiroAno = 29 - (valorDia - 1)
+
             }
             
         } else if (valorMes == 4 || valorMes == 6 || valorMes == 9 || valorMes == 11) {
 
-            if (valorDia == 31 ) {
+            if (valorDia == 30 ) {
 
-                var mesesPrimeiroAno = valorMes
+                var mesesPrimeiroAno = 12 - valorMes
+                var diasPrimeiroAno = 1
         
             } else {
         
-                var mesesPrimeiroAno = valorMes - 1
+                var mesesPrimeiroAno = 12 - valorMes
+                var diasPrimeiroAno = 30 - (valorDia - 1)
         
             }
            
@@ -112,11 +118,13 @@ btn.addEventListener("click", function(e) {
 
             if (valorDia == 31 ) {
 
-                var mesesPrimeiroAno = valorMes
+                var mesesPrimeiroAno = 12 - valorMes
+                var diasPrimeiroAno = 1
         
             } else {
         
-                var mesesPrimeiroAno = valorMes - 1
+                var mesesPrimeiroAno = 12 - valorMes
+                var diasPrimeiroAno = 31 - (valorDia - 1)
         
             }
             
@@ -124,34 +132,38 @@ btn.addEventListener("click", function(e) {
 
             if (valorDia == 28 ) {
 
-                var mesesPrimeiroAno = valorMes
+                var mesesPrimeiroAno = 12 - valorMes
+                var diasPrimeiroAno = 1
         
             } else {
         
-                var mesesPrimeiroAno = valorMes - 1
-        
+                var mesesPrimeiroAno = 12 - valorMes
+                var diasPrimeiroAno = 28 - (valorDia - 1)
+
             }
             
         } else if (valorMes == 4 || valorMes == 6 || valorMes == 9 || valorMes == 11) {
 
-            if (valorDia == 31 ) {
+            if (valorDia == 30 ) {
 
-                var mesesPrimeiroAno = valorMes
+                var mesesPrimeiroAno = 12 - valorMes
+                var diasPrimeiroAno = 1
         
             } else {
         
-                var mesesPrimeiroAno = valorMes - 1
+                var mesesPrimeiroAno = 12 - valorMes
+                var diasPrimeiroAno = 30 - (valorDia - 1)
         
             }
            
-        } 
+        }  
 
     }
 
-    /* fim soma meses inteiros primeiro ano */
+    /* fim soma meses inteiros primeiro ano e dias primeiro ano */
 
 
-    /* começo soma meses inteiros ultimo ano  = ok */
+    /* começo soma meses inteiros ultimo ano e dias ultimo ano = ok */
 
     var uAno4 = anoNumero % 4
     console.log(uAno4)
@@ -166,10 +178,12 @@ btn.addEventListener("click", function(e) {
             if (valorDia == 31 ) {
 
                 var mesesUltimoAno = mesNumero
+                var diasUltimoAno = 0
         
             } else {
         
-                var mesesUltimoAno = mesNumero -1
+                var mesesUltimoAno = mesNumero - 1
+                var diasUltimoAno = diaNumero
         
             }
             
@@ -178,10 +192,12 @@ btn.addEventListener("click", function(e) {
             if (valorDia == 29 ) {
 
                 var mesesUltimoAno = mesNumero
+                var diasUltimoAno = 0
         
             } else {
         
-                var mesesUltimoAno = mesNumero -1
+                var mesesUltimoAno = mesNumero - 1
+                var diasUltimoAno = diaNumero
         
             }
             
@@ -190,10 +206,12 @@ btn.addEventListener("click", function(e) {
             if (valorDia == 30 ) {
 
                 var mesesUltimoAno = mesNumero
+                var diasUltimoAno = 0
         
             } else {
         
-                var mesesUltimoAno = mesNumero -1
+                var mesesUltimoAno = mesNumero - 1
+                var diasUltimoAno = diaNumero
         
             }
            
@@ -206,10 +224,12 @@ btn.addEventListener("click", function(e) {
             if (valorDia == 31 ) {
 
                 var mesesUltimoAno = mesNumero
+                var diasUltimoAno = 0
         
             } else {
         
-                var mesesUltimoAno = mesNumero -1
+                var mesesUltimoAno = mesNumero - 1
+                var diasUltimoAno = diaNumero
         
             }
             
@@ -218,10 +238,12 @@ btn.addEventListener("click", function(e) {
             if (valorDia == 28 ) {
 
                 var mesesUltimoAno = mesNumero
+                var diasUltimoAno = 0
         
             } else {
         
-                var mesesUltimoAno = mesNumero -1
+                var mesesUltimoAno = mesNumero - 1
+                var diasUltimoAno = diaNumero
         
             }
             
@@ -230,80 +252,40 @@ btn.addEventListener("click", function(e) {
             if (valorDia == 30 ) {
 
                 var mesesUltimoAno = mesNumero
+                var diasUltimoAno = 0
         
             } else {
         
-                var mesesUltimoAno = mesNumero -1
+                var mesesUltimoAno = mesNumero - 1
+                var diasUltimoAno = diaNumero
         
             }
            
-        } 
+        }  
 
     }
 
-    /* fim soma meses inteiros ultimo ano */
+    /* fim soma meses inteiros ultimo ano e dias ultimo ano */
 
-    /* começo soma dias primeiro e ultimo ano */
 
-    const mediaDeDiasAno = 365.25
-    const mediaDeDiasPorMes = (mediaDeDiasAno / 12).toFixed(2)
+    /* começo soma meses primeiro e ultimo ano = ok */
 
-    console.log(mediaDeDiasPorMes)
-    console.log(typeof mediaDeDiasPorMes)
+    var mesesFinal = mesesPrimeiroAno + mesesUltimoAno
 
-    if (pAno4 == 0 || pAno400 == 0) {
+    /* fim soma meses primeiro e ultimo ano */
 
-        if (valorMes == 1 || valorMes == 3 || valorMes == 5 || valorMes == 7 || valorMes == 8 || valorMes == 10 || valorMes == 12)  {
 
-            var diasPrimeiroAno = 31 - (valorDia + 1)
-            
-        } else if (valorMes == 2) {
+    /* começo soma dias primeiro e ultimo ano = ok */
 
-            var diasPrimeiroAno = 29 - (valorDia + 1)
-            
-        } else if (valorMes == 4 || valorMes == 6 || valorMes == 9 || valorMes == 11) {
-
-            var diasPrimeiroAno = 30 - (valorDia + 1)
-
-        }
-
-    } else {
-
-        if (valorMes == 1 || valorMes == 3 || valorMes == 5 || valorMes == 7 || valorMes == 8 || valorMes == 10 || valorMes == 12)  {
-
-            var diasPrimeiroAno = 31 - (valorDia + 1)
-            
-        } else if (valorMes == 2) {
-
-            var diasPrimeiroAno = 28 - (valorDia + 1)
-            
-        } else if (valorMes == 4 || valorMes == 6 || valorMes == 9 || valorMes == 11) {
-
-            var diasPrimeiroAno = 30 - (valorDia + 1)
-            
-        }
-
-    }
-
-    console.log(diasPrimeiroAno)
-    console.log(typeof diasPrimeiroAno)
+    var diasFinal = diasPrimeiroAno + diasUltimoAno
 
     /* fim soma dias primeiro e ultimo ano */
-    
 
-    /* começo soma meses inteiros primeiro e ultimo ano para ver se da um ano inteiro = ok */
 
-    // if () {
+    /* DATA FINAL = ok */
 
-    // } else {
-
-    // }
-
-    /* fim soma meses inteiros primeiro e ultimo ano para ver se da um ano inteiro */
-
-    /* DATA FINAL */
-
-    // var dataFinal = `${somaAnosInteiros}/${mesesPrimeiroAno + mesesUltimoAno}/${ano}`
+    var dataFinal = `${somaAnosInteiros}/${mesesFinal}/${diasFinal}`
+    console.log('A data final é ', dataFinal)
 
     /* DATA FINAL */
 
