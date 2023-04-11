@@ -288,5 +288,4 @@ btn.addEventListener("click", function(e) {
     console.log('A data final é ', dataFinal)
 
     /* DATA FINAL */
-
 })
