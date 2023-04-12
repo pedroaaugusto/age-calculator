@@ -98,8 +98,7 @@ section > p{
     height: 6rem;
     border: none;
     border-radius: 3rem; 
-     
-
+    cursor: pointer;
 }
 
 img{
@@ -107,15 +106,7 @@ img{
     bottom: 6.22rem;
     max-width: 6rem;
     pointer-events:none; 
-}
-
-img:hover{
-    cursor: pointer;
-}
-
-img:active{
-    rotate: 360deg ;
-    transition: 0.2s;
+    transition: transform 0.2s ease;
 }
 
 .box-amd{
