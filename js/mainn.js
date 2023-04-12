@@ -3,17 +3,14 @@ const mesNascimento = document.querySelector("#mes-nas")
 const anoNascimento = document.querySelector("#ano-nas")
 const btn = document.querySelector("#send")
 const img = document.querySelector(".img")
+const alertaDia = document.querySelector("#alerta-dia")
+const alertaMes = document.querySelector("#alerta-mes")
+const alertaAno = document.querySelector("#alerta-ano")
 
 btn.addEventListener("click", function(e) {
 
     e.preventDefault();
 
-    /* começo animação botão = ok */
-
-    img.style.transform = 'rotate(360deg)';
-
-    /* fim animação botão */
-    
 
     /* começo recebimento data do usuario = ok */
 
@@ -308,8 +305,53 @@ btn.addEventListener("click", function(e) {
 
     /* DATA FINAL = ok */
 
-    var dataFinal = `${somaAnosInteiros}/${mesesFinal}/${diasFinal}`
-    console.log('A data final é ', dataFinal)
+    var idadeFinal = `${somaAnosInteiros}/${mesesFinal}/${diasFinal}`
+    console.log('A idade final é ', idadeFinal)
 
     /* DATA FINAL */
+
+
+    /* começo validando informaçoes input = ## */
+
+    function validandoInputDia() 
+    {
+        if (valorDia === '') {
+            alertaDia.style.display = 'block';
+            btn.disabled = true;
+        } else if (valorDia < 1 || valorDia > 31) {
+            alertaDia.style.display = 'block';
+            btn.disabled = true;    
+        } else {
+            btn.disabled = false;
+        }
+        
+    }
+
+    function validandoInputMes()
+    {
+        if (valorMes === '') {
+            alertaDia.style.display = 'block';
+            btn.disabled = true;
+        } else if (valorDia < 1 || valorDia > 31) {
+            alertaDia.style.display = 'block';
+            btn.disabled = true;    
+        } else {
+            btn.disabled = false;
+        }
+    }
+
+    function validandoInputAno()
+    {
+        
+    }
+
+    /* fim validando informaçoes input */
+
+    btn.addEventListener('click', validandoInputDia)
+
+    /* começo animação botão = ok */
+
+    img.style.transform = 'rotate(360deg)';
+
+    /* fim animação botão */
 })

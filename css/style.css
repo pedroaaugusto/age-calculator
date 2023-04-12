@@ -74,6 +74,7 @@ section > p{
     color: hsl(0, 100%, 67%);
     display: none;
     text-align: center;
+    padding-top: 1rem;
 }
 
 .box-reload{
