@@ -2,11 +2,18 @@ const diaNascimento = document.querySelector("#dia-nas")
 const mesNascimento = document.querySelector("#mes-nas")
 const anoNascimento = document.querySelector("#ano-nas")
 const btn = document.querySelector("#send")
-
+const img = document.querySelector(".img")
 
 btn.addEventListener("click", function(e) {
 
     e.preventDefault();
+
+    /* começo animação botão = ok */
+
+    img.style.transform = 'rotate(360deg)';
+
+    /* fim animação botão */
+    
 
     /* começo recebimento data do usuario = ok */
 
