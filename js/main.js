@@ -10,9 +10,6 @@ const alertaAno = document.querySelector("#alerta-ano")
 const anoFinal = document.querySelector(".ano")
 const mesFinal = document.querySelector(".mes")
 const diaFinal = document.querySelector(".dia")
-const anoFinalValue = anoFinal.value
-const mesFinalValue = mesFinal.value
-const diaFinalValue = diaFinal.value
 
 const data = new Date()
 
@@ -301,7 +298,7 @@ btn.addEventListener("click", function(e) {
         if (diasFinal >= mediaDiasMes) {
 
             var diasFinal = Math.round(diasFinal - mediaDiasMes)
-            var mesesFinal = mesesFinal +1
+            var mesesFinal = mesesFinal + 1
 
             if (mesesFinal > 12) {
                 
@@ -317,20 +314,11 @@ btn.addEventListener("click", function(e) {
 
         /* DATA FINAL = ok */
 
-        var idadeFinal = `${somaAnosInteiros}/${mesesFinal}/${diasFinal}`
-        console.log('A idade final é ', idadeFinal)
+        anoFinal.innerHTML = somaAnosInteiros
+        mesFinal.innerHTML = mesesFinal
+        diaFinal.innerHTML = diasFinal
 
         /* DATA FINAL */
-
-    }
-
-
-    function spamComDataFinal()
-    {
-
-        anoFinalValue.innerHTML = somaAnosInteiros
-        mesFinalValue.innerHTML = mesesFinal
-        diaFinalValue.innerHTML = diasFinal
 
     }
 
@@ -413,7 +401,6 @@ btn.addEventListener("click", function(e) {
 
             logicaDataFinal()
 
-            spamComDataFinal()
 
         } else {
 
