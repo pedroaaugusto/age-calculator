@@ -1,10 +1,10 @@
 # Age-calculator
 
-Saiba qual a idade de algo ou alguem apenas colocando a data de nascimento ou criação, que você tem conhecimento.
+Saiba qual a idade de algo ou alguém apenas colocando a data de nascimento ou criação, que você tem conhecimento.
 
 ## Objetivo
 
-O objetivo deste projeto foi criar uma solução para um desafio do Front-end Mentor <a href="https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q">Age calculator app</a> onde criariamos uma calculadora de idade, tendo em mente principalmente aprimorar suas habilidades em JavaScript e validação de formulários.
+O objetivo deste projeto foi criar uma solução para um desafio do Front-end Mentor <a href="https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q">Age calculator app</a> onde criaríamos uma calculadora de idade, tendo em mente principalmente aprimorar suas habilidades em JavaScript e validação de formulários.
 
 ## Acesse
 
@@ -127,7 +127,7 @@ Colocar topico no proximo README
 
 ### O que aprendi
 
-#### Aprendi a criar um evento e fazer com que o formulario não seja enviado com "preventDefault" ;
+#### Aprendi a criar um evento e fazer com que o formulário não seja enviado com "preventDefault" ;
 ```js
 btn.addEventListener("click", function(e) {
 
@@ -136,7 +136,7 @@ btn.addEventListener("click", function(e) {
 });
 ```
 
-#### Aprendi a utilizar condicionais como "e" e "ou" dentro de dentro de estruturas "ifelse" ;
+#### Aprendi a utilizar condicionais como "e" e "ou" dentro de estruturas "ifelse" ;
 ```js
 function validandoInputs()
 {
@@ -149,7 +149,7 @@ function validandoInputs()
 }
 ```
 
-#### Aprendi a conseguir a data atual usando "new Date()" e a manipular essa resposta para que apareça somente informações necessarias, e tambem a transformar uma string em um number e vice-versa ;
+#### Aprendi a conseguir a data atual usando "new Date()" e a manipular essa resposta para que apareça somente informações necessárias, e também a transformar uma string em um number e vice-versa ;
 ```js
 const data = new Date()
 
@@ -165,7 +165,7 @@ const mesNumero = Number(mes)
 const anoNumero = ano
 ```
 
-#### Aprendi a arredondar numeros com ou sem casas decimais usando ".toFixed()" e "Math.round()" ;
+#### Aprendi a arredondar números com ou sem casas decimais usando ".toFixed()" e "Math.round()" ;
 ```js
 var diasFinal = diasPrimeiroAno + diasUltimoAno
 
@@ -203,13 +203,13 @@ var valorAnoMaisUm = valorAno + 1
 
 ### Status do projeto
 
-Primeira entrega concluida. Preparando atualizações.
+Primeira entrega concluída. Preparando atualizações.
 
 ### Recursos úteis
 
-- [Curso sobre JavaScript](https://www.cursoemvideo.com/curso/javascript/) - Curso com otima didatica pra quem busca dar os primeiros passos em JavaScript
-- [Escopo JavaScript](https://medium.com/weyes/entendendo-o-uso-de-escopo-no-javascript-3669172ca5ba) - Site otimo para entender como funciona o escopo no JavaScript
-- [Conventional Commits](https://www.conventionalcommits.org/pt-br/v1.0.0/) - Otimo conteudo sobre Conventional Commits, importantissimo para logica de commits ajuda a melhorar a qualidade do código-fonte, tornando as alterações mais fáceis de entender e rastrear.
+- [Curso sobre JavaScript](https://www.cursoemvideo.com/curso/javascript/) - Curso com ótima didática para quem busca dar os primeiros passos em JavaScript.
+- [Escopo JavaScript](https://medium.com/weyes/entendendo-o-uso-de-escopo-no-javascript-3669172ca5ba) - Site ótimo para entender como funciona o escopo no JavaScript.
+- [Conventional Commits](https://www.conventionalcommits.org/pt-br/v1.0.0/) - Ótimo conteúdo sobre Conventional Commits, importantíssimo para lógica de commits ajuda a melhorar a qualidade do código-fonte, tornando as alterações mais fáceis de entender e rastrear.
 
 ## Autor
 
