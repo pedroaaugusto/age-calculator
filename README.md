@@ -4,7 +4,7 @@ Saiba qual a idade de algo ou alguém apenas colocando a data de nascimento ou c
 
 ## Objetivo
 
-O objetivo deste projeto foi criar uma solução para um desafio do Front-end Mentor <a href="https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q">Age calculator app</a> onde criaríamos uma calculadora de idade, tendo em mente principalmente aprimorar suas habilidades em JavaScript e validação de formulários.
+O objetivo deste projeto foi achar uma solução para um desafio do Front-end Mentor <a href="https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q">Age calculator app</a> onde criaríamos uma calculadora de idade, tendo em mente principalmente aprimorar suas habilidades em JavaScript e validação de formulários.
 
 ## Acesse
 
