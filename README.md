@@ -18,6 +18,7 @@ O objetivo deste projeto foi criar uma solução para um desafio do Front-end Me
   - [Links](#links)
 - [Meu processo](#meu-processo)
   - [Construido com](#construído-com)
+  - [Features](#features)
   - [Tecnologias utilizadas](#tecnologias-utilizadas)
   - [O que aprendi](#o-que-aprendi)
   - [Status do projeto](#status-do-projeto)
