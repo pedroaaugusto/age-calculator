@@ -159,7 +159,6 @@ const mes = String(data.getMonth() + 1).padStart(2, '0')
 const ano = data.getFullYear()
 
 const dataAtual = `${dia}/${mes}/${ano}`
-console.log(dataAtual) /* apagar no final */
 
 const diaNumero = Number(dia)
 const mesNumero = Number(mes)
